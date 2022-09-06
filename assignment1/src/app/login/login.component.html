@@ -1,0 +1,26 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet" type="text/css" href="login.component.css">    
+</head>    
+<body>    
+    <h2>Login Page</h2><br>    
+    <div class="login">    
+    <form id="login" method="get" action="login.php">    
+        <label><b>User Name</b></label>    
+        <input type="text" id="Uname" placeholder="Username" [(ngModel)]="usertest.username" name="usertest.username">
+        <br><br>    
+        <label><b>Email</b></label>    
+        <input type="text" id="Email" placeholder="Email" [(ngModel)]="usertest.email" name="usertest.email">    
+        <br><br>   
+        <label><b>ID</b></label>    
+        <input type="text" id="id" placeholder="id" [(ngModel)]="usertest.id" name="usertest.id">    
+        <br><br>     
+        <input type="button" name="log" id="log" value="Log In Here" (click)="clickme()">
+        <br><br>    
+        <input type="button" name="log" id="log" value="Profile Page" (click)="profile()">
+    </form>     
+</div>    
+</body>    
+</html>  
