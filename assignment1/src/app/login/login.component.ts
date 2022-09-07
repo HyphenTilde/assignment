@@ -29,7 +29,15 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('email',data.email);
       localStorage.setItem('id',data.id);
       localStorage.setItem('role',data.role);
-      this.router.navigateByUrl('home');
+      if(data.role == 'User'){
+        this.router.navigateByUrl('home');
+      } else if(data.role == 'Super Admin') {
+        this.router.navigateByUrl('shome');
+      } else if(data.role == 'Group Admin'){
+        this.router.navigateByUrl('ghome');
+      } else if(data.role == 'Group Assis'){
+        this.router.navigateByUrl('gahome');
+      }
     }
     )
   }
