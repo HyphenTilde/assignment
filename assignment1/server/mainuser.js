@@ -11,8 +11,4 @@ var user1 = new User("Super","1","email1@email.com","Super Admin");
 
 let users = [user1];
 
-let groups = [["Super"]];
-
-let channels = [[["Super"]]];
-
-module.exports = User;
+module.exports = users;

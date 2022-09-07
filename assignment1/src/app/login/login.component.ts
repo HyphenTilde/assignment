@@ -33,9 +33,6 @@ export class LoginComponent implements OnInit {
     }
     )
   }
-  profile(){
-    this.router.navigateByUrl('profile');
-  }
   
   ngOnInit(): void {
   }

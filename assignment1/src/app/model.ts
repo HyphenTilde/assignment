@@ -9,3 +9,11 @@ export class Username{
       this.id=id;
     }
   }
+
+export class u_test{
+  username: string;
+
+  constructor(username: string){
+    this.username=username;
+  }
+}
