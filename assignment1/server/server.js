@@ -20,7 +20,10 @@ app.post('/api/collect',require('./routes/collect'));
 app.post('/api/screate',require('./routes/screate'));
 app.post('/api/sremove',require('./routes/sremove'));
 app.post('/api/supgrade',require('./routes/supgrade'));
-
+app.post('/api/gcreate',require('./routes/gcreate'));
+app.post('/api/gadduser',require('./routes/gadduser'));
+app.post('/api/gremoveuser',require('./routes/gremoveuser'));
+app.post('/api/gremovegroup',require('./routes/gremovegroup'));
 app.get('/*',function(req,res,next){
-    res.sendFile('index.html',{ root:'../dist/assignment1' });
+    res.sendFile('index.html',{ root:'../dist/assignment' });
 });

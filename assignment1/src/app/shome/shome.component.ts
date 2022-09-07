@@ -41,4 +41,24 @@ export class ShomeComponent implements OnInit {
       alert(data);
     })
   }
+  groupcreate(){
+    this.httpclient.post(backendURL+'/api/gcreate',this.usertest,httpOptions).subscribe((data:any)=>{
+
+    })
+  }
+  addusergroup(){
+    this.httpclient.post(backendURL+'/api/gadduser',this.usertest,httpOptions).subscribe((data:any)=>{
+
+    })
+  }
+  removeusergroup(){
+    this.httpclient.post(backendURL+'/api/gremoveuser',this.usertest,httpOptions).subscribe((data:any)=>{
+
+    })
+  }
+  removegroup(){
+    this.httpclient.post(backendURL+'/api/gremovegroup',this.usertest,httpOptions).subscribe((data:any)=>{
+      
+    })
+  }
 }

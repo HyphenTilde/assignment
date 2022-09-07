@@ -3,4 +3,19 @@
     <div *ngFor="let index of group_array">
         {{index}}
     </div>
+
+    <label><b>User Name</b></label>    
+    <input type="text" id="Uname" placeholder="Username" [(ngModel)]="usertest.username" name="usertest.username">
+    <br><br>    
+    <label><b>Email</b></label>    
+    <input type="text" id="Email" placeholder="Email" [(ngModel)]="usertest.email" name="usertest.email">    
+    <br><br>
+    <label><b>Group ID</b></label>    
+    <input type="text" id="id" placeholder="Group ID" [(ngModel)]="usertest.id" name="usertest.id">    
+    <br><br>
+    
+    <input type="button" name="creategroup" id="creategroup" value="Create Group" (click)="groupcreate()">
+    <input type="button" name="addusergroup" id="addusergroup" value="Add User to Group" (click)="addusergroup()">
+    <input type="button" name="removeusergroup" id="removeusergroup" value="Remove User from Group" (click)="removeusergroup()">
+    <input type="button" name="removegroup" id="removegroup" value="Remove Group" (click)="removegroup()">
 </html>
